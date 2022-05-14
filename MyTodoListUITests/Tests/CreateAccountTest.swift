@@ -45,7 +45,7 @@ class CreateAccountTest: BaseTest{
         createAccountScreen.enterRepeatPassword(text: "Tester1234")
         createAccountScreen.tapCreateButton()
         
-        XCTAssertTrue(createAccountScreen.isRepeatPasswordAlertVisible(), "Alert is not exists")
+        XCTAssertFalse(createAccountScreen.isRepeatPasswordAlertVisible(), "Alert is not exists")
     }
     
 }
