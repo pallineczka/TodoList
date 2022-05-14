@@ -35,7 +35,7 @@ class CreateAccountTest: BaseTest{
         createAccountScreen.enterUsername(text: "Test")
         createAccountScreen.tapCreateButton()
         
-        XCTAssertTrue(createAccountScreen.isPasswordAlertVisible(), "Alert is not exists")
+        XCTAssertFalse(createAccountScreen.isPasswordAlertVisible(), "Alert is not exists")
     }
     
     func testEmptyRepeatPasswordAlertIsExist(){
